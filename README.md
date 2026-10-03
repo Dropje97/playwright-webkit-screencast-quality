@@ -1,6 +1,8 @@
 # WebKit screencast ignores the requested JPEG quality
 
-Minimal reproduction: on Linux, Playwright's WebKit encodes screencast frames
+Minimal reproduction for
+[microsoft/playwright#43100](https://github.com/microsoft/playwright/issues/43100):
+on Linux, Playwright's WebKit encodes screencast frames
 (also used for video recording) at JPEG quality 90 whatever quality is
 requested, while Chromium follows the requested quality.
 
